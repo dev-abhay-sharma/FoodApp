@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.swinfotech.foodapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FoodApp"
+        tools:targetApi="31">
+        <activity
+            android:name="com.swinfotech.foodapp.activities.Notification"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.signin.OnBoardScreen"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.signin.ForgotPassword"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.signin.SignUp"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.signin.Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.swinfotech.foodapp.activities.ChooseInterests"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.OrderDetails"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.ConfirmOrder"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.AddNewAddress"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.Checkout"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.Rewards"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.ReferAndEarn"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.LoyaltyPoints"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.Wallet"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.EditProfile"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.signin.ChangePassword"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.MyAddress"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.Coupon"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.NewOnStackFoodItem"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.PopularRestaurantFoodReviews"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.SearchPopularRestaurantFood"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.PopularRestaurantFood"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.CategoriesFood"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.Search"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.PopularFoodNearBy"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.Campaigns"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.PopularRestaurant"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.NewOnStackFood"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.BestReviewedFood"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.Categories"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.Language"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.HelpSupport"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.TermsConditions"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.PrivacyPolicy"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.AboutUs"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.activities.Profile"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.signin.SignInAsGuest"
+            android:exported="true" />
+        <activity
+            android:name="com.swinfotech.foodapp.MainActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signin.OnBoardScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layoutAll"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/slideViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_marginBottom="@dimen/_25sdp" />
+
+    </LinearLayout>
+
+    <com.rd.PageIndicatorView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layoutAll"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:piv_animationType="drop"
+        app:piv_dynamicCount="true"
+        app:piv_interactiveAnimation="true"
+        app:piv_padding="@dimen/_10sdp"
+        app:piv_radius="@dimen/_5sdp"
+        app:piv_selectedColor="@color/primary_color"
+        app:piv_unselectedColor="#D5D4D4"
+        app:piv_viewPager="@id/slideViewPager" />
+
+    <LinearLayout
+        android:id="@+id/layoutAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/skipLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/skip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:text="Skip"
+                android:textAllCaps="false"
+                android:textColor="@color/primary_color"
+                android:textSize="@dimen/_15ssp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_background"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="@dimen/_15ssp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/getStarted"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:visibility="gone"
+            android:text="Get Started"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#fff"
+            android:background="@drawable/rounded_background"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

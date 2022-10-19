@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">FoodApp</string>
+
+    <string name="as_guest">FIND RESTAURANTS AND FOODS NEAR YOU</string>
+    <string name="as_guest1">By allowing location access, you can search for restaurants and foods near you and receive more accurate delivery.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="about_us">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</string>
+
+    <string name="convert_currency">Your loyalty point will convert to currency and transfer to your wallet</string>
+
+    <string name="confirm_order">Your order is placed successfully. We start our delivery process and you will receive your food soon.</string>
+    <string name="confirm_order_points">You have earned 94 points. It will add to your balance when the order is delivered.</string>
+    <string name="forgot_pass">Please enter your registered Mobile Number\n so that we can help you to recover your\npassword.</string>
+
+    <string name="about_us_here">hello</string>
+
+    <!--    onBoard headings-->
+    <string name="heading_one">Get Favorite Foods</string>
+    <string name="heading_two">Easy Payment</string>
+    <string name="heading_three">Fast Delivery</string>
+
+
+    <string name="desc_one">Select your location to see the wide range restaurants and order your\ndesired food.</string>
+    <string name="desc_two">Order food with COD payment or pay by safer and faster payment gateway</string>
+    <string name="desc_three">Hundreds of delivery man are waiting for your order. So place your order\nand get the food delivered to your doorstep!</string>
+
+
+    <string-array name="newArray">
+        <!--        <item>Select</item>-->
+        <item>Q972+VJ8, Dhaka, Bangladesh</item>
+    </string-array>
+
+
+</resources>

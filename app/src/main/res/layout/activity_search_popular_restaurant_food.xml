@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activities.SearchPopularRestaurantFood">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/searchPopularRestaurantBack"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/back_arrow"
+            app:tint="@color/primary_color"/>
+
+<!--        <androidx.appcompat.widget.SearchView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_40sdp"-->
+<!--            android:layout_marginStart="@dimen/_10sdp"-->
+<!--            android:background="@drawable/rounded_border_background"-->
+<!--            app:iconifiedByDefault="false"-->
+<!--            app:queryHint="Search food in restaurant"/>-->
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:drawableEnd="@drawable/search"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:drawableTint="#AEACAC"
+            android:hint="Search food in restaurant"
+            android:textSize="@dimen/_12ssp"
+            android:background="@drawable/rounded_border_background_light"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/empty_box"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="No food available"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_11ssp"
+        android:textColor="#BEBCBC"
+        android:textStyle="bold"/>
+
+</LinearLayout>

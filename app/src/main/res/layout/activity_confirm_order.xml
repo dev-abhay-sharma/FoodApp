@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    android:orientation="vertical"
+    tools:context=".activities.ConfirmOrder">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbarThumbVertical="@null">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/checked"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_50sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You Place The Order Successfully"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="@dimen/_13ssp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_order"
+                android:textAlignment="center"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_10ssp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/giftbox"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Congratulation !"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="@dimen/_13ssp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_order_points"
+                android:textAlignment="center"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_13ssp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/backToHome"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:text="Back To Home"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rounded_background"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="#fff"
+                android:layout_marginBottom="@dimen/_5sdp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

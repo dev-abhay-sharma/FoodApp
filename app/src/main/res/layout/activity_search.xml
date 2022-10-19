@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fafafa"
+    android:orientation="vertical"
+    tools:context=".activities.Search">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="@dimen/_225sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:background="#fff"
+            app:iconifiedByDefault="false"
+            android:layoutDirection="rtl"
+            app:searchIcon="@null"
+            app:closeIcon="@drawable/filter_list"
+            app:queryHint="Search Here"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="Cancel"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16ssp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9 Results found"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textColor="@color/primary_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:tabIndicatorColor="@color/primary_color"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"
+            app:tabIndicatorHeight="@dimen/_3sdp"
+            app:tabMode="fixed"
+            app:tabGravity="fill" >
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restaurants" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/searchViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_1sdp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
