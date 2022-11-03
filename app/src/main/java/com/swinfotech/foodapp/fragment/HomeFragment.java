@@ -165,17 +165,14 @@ public class HomeFragment extends Fragment {
 
     private void getNotificationMenu() {
         binding.toolbar.inflateMenu(R.menu.notification);
-        binding.toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.notify:
-                        //do sth here
-                        context.startActivity(new Intent(context, Notification.class));
-                        return true;
-                }
-                return false;
+        binding.toolbar.setOnMenuItemClickListener(item -> {
+            switch (item.getItemId()) {
+                case R.id.notify:
+                    //do sth here
+                    context.startActivity(new Intent(context, Notification.class));
+                    return true;
             }
+            return false;
         });
     }
 

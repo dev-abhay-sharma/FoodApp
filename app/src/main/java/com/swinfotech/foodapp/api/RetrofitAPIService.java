@@ -36,6 +36,31 @@ public interface RetrofitAPIService {
     Call<PopularProducts> getPopularProducts(@Query("market") String market,
                                              @Query("limit") String limit);
 
+    @POST(Constants.GET_WISHLIST_ITEM)
+    Call<PopularProducts> getWishListItems(@Query("logintoken") String loginToken);
+
+    @POST(Constants.RELATED_PRODUCTS)
+    Call<PopularProducts> getWishListItems(@Query("logintoken") String loginToken,
+                                           @Query("p_id") String p_id);
+
+    @POST(Constants.GET_CART_ITEMS)
+    Call<PopularProducts> getCartItems(@Query("logintoken") String loginToken,
+                                           @Query("limit") String limit);
+
+    @POST(Constants.ADD_WISHLIST_ITEM)
+    Call<PopularProducts> addToWishList(@Query("logintoken") String loginToken,
+                                        @Query("prod_id") String prod_id,
+                                        @Query("price") String price);
+
+    @POST(Constants.ADD_TO_CART)
+    Call<PopularProducts> addToCart(@Query("logintoken") String loginToken,
+                                    @Query("limit") String limit,
+                                    @Query("prod_id") String prod_id);
+
+    @POST(Constants.DEL_WISHLIST_ITEM)
+    Call<PopularProducts> deleteWishListItems(@Query("logintoken") String loginToken,
+                                              @Query("prod_id") String prod_id);
+
     @POST(Constants.ACTIVE_RESTAURANTS)
     Call<ActiveRestaurantModel> getActiveRestaurant(@Query("market") String market,
                                                     @Query("limit") String limit);
@@ -48,6 +73,7 @@ public interface RetrofitAPIService {
     @POST(Constants.GET_PRODUCT_DETAILS)
     Call<ProductDetails> getProductDetails(@Query("market") String market,
                                            @Query("p_id") String p_id);
+
     @POST(Constants.GET_STORE_PRODUCTS)
     Call<RestaurantProducts> getStoreProducts(@Query("market") String market,
                                               @Query("limit") String rest_id,
@@ -57,9 +83,4 @@ public interface RetrofitAPIService {
     @POST(Constants.GET_DASHBOARD_INFO)
     Call<DashboardInfoModel> getDashboardInfo(@Query("logintoken") String market);
 
-
-
-    /*@POST(Constants.ACTIVE_CATEGORIES)
-     */
-    // Call<CategoryModel> getCategories(@Query("market") String market);
 }

@@ -10,6 +10,13 @@ public class Constants {
     public static final String ACTIVE_RESTAURANTS="Restaurants/ActiveRestaurants";
     public static final String ACTIVE_CATEGORIES="Category/ActiveCategory";
     public static final String POPULAR_PRODUCTS="Products/PopularProducts";
+    public static final String ACTIVE_PRODUCTS="Products/ActiveProducts";
+    public static final String GET_WISHLIST_ITEM="WishList/WishListItems";
+    public static final String DEL_WISHLIST_ITEM="WishList/DeleteWishList";
+    public static final String ADD_WISHLIST_ITEM="WishList/AddToWishList";
+    public static final String ADD_TO_CART="Cart/AddToCart";
+    public static final String GET_CART_ITEMS="Cart/CartItems";
+    public static final String RELATED_PRODUCTS="Products/RelatedProducts";
     public static final String TOKEN="loginToken";
     public static final String IMAGE_BASE_URL="https://secure.gravitto.com";
     public static final String GET_RESTATURANT_DETAILS = "Restaurants/ShopDetails";
